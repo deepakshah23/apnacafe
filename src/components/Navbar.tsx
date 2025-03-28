@@ -9,7 +9,7 @@ const Navbar = () => {
   const { items } = useSelector((state: RootState) => state.cart);
 
   return (
-    <nav className="backdrop-blur-md text-white fixed top-0 left-0 right-0 z-50">
+    <nav className="backdrop-blur-md text-white fixed top-0 left-0 right-0 z-50 ">
       <div className="container mx-auto px-4 bg-black/70">
         <div className="flex items-center justify-between h-16">
           <motion.div
@@ -17,7 +17,10 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-2xl font-bold"
           >
-            <Link to="/">Apna Cafe</Link>
+            <Link to="/" className="flex items-center gap-1">
+              <img src="./apnacafe.ico" alt="icon" width="50px" height="50px" />
+              Apna Cafe
+            </Link>
           </motion.div>
 
           <div className="flex items-center space-x-4">
@@ -50,7 +53,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   to="/register"
-                  className="bg-accent px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors"
+                  className="bg-primary px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors"
                 >
                   Register
                 </Link>

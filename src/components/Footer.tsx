@@ -2,13 +2,14 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-black/70 text-white mt-12">
+    <footer className="bg-black/80 text-white ">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Apna Cafe</h3>
             <p className="text-gray-300">
-              Serving the perfect blend of taste and tradition since 2022.
+              Serving delicious coffee, refreshing beverages, and tasty snacks
+              in a cozy ambiance. Relax, unwind, and enjoy every sip! ☕✨
             </p>
           </div>
           <div>

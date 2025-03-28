@@ -9,6 +9,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       className="space-y-8"
     >
+      {/* <HeroSection /> */}
       <HeroSection />
       <div id="viewMenu">
         <Menu />

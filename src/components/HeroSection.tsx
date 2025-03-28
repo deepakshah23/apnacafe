@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const HeroSection = () => {
+  const scrollToMenu = () => {
+    const menuSection = document.getElementById("viewMenu");
+    menuSection?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="relative h-[90vh] overflow-hidden">
       <div
@@ -26,10 +29,10 @@ const HeroSection = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={scrollToMenu}
             className="bg-accent text-white px-8 py-3 rounded-full text-lg font-semibold 
             hover:bg-opacity-90 transition-colors"
           >
-            {/* <Link to="ViewMenu">View Menu</Link> */}
             View Menu
           </motion.button>
         </motion.div>
